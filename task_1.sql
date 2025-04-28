@@ -1,7 +1,7 @@
 /*
 Task: Analyze Daily Customer Activity in January 2023
 Objective: To understand the daily customer activity and
-regional distribution of customers for the month of January 2025
+regional distribution of customers for the month of January 2022
 */
 
 SELECT 
