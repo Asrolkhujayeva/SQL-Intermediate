@@ -1,0 +1,28 @@
+/*
+Cohort Analysis
+How do different groups generate revenue?
+*/
+
+SELECT
+    cohort_year,
+    COUNT(DISTINCT customerkey) AS total_customers,
+    SUM(total_net_revenue) AS total_revenue,
+    SUM(total_net_revenue)/COUNT(DISTINCT customerkey) AS customer_revenue
+FROM cohort_analysis
+WHERE orderdate = first_purchase_date
+GROUP BY cohort_year
+
+
+/*
+index,cohort_year,total_customers,total_revenue,customer_revenue
+0,"""2015""",2825,7245612.977386288,2564.818753057093
+1,"""2016""",3397,9839134.340623531,2896.4187049230295
+2,"""2017""",4068,11771496.313936546,2893.681493101413
+3,"""2018""",7446,19773770.555444725,2655.623227967328
+4,"""2019""",7755,22245058.2163629,2868.479460523907
+5,"""2020""",3031,7058614.523282491,2328.807167034804
+6,"""2021""",4663,11974082.363847371,2567.892422013161
+7,"""2022""",9010,21507554.55017326,2387.0759767117934
+8,"""2023""",5890,12890580.839800252,2188.5536230560697
+9,"""2024""",1402,2764779.6608598013,1972.0254357059923
+*/
