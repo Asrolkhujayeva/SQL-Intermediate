@@ -151,12 +151,7 @@ percentiles
 GROUP BY p.categoryname, revenue_tier;
 ```
 
----
 
-## 📂 Next Sections Coming:
 
-* 🔀 **Window Functions** (RANK, ROW\_NUMBER, MOVING AVG)
-* 🔢 **Views** for cleaner reporting layers
-* ⚖️ **Query Optimization** for performance tuning
 
-Let me know when you're ready to continue building the rest!
+
